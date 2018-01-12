@@ -6,9 +6,9 @@ import (
 	"github.com/gredinger/crypto/crypto"
 )
 
+// Just making sure we can encode things correctly. SAILTHESHIPS <-> VDLOWKHVKLSV
 func main() {
 	fmt.Println(crypto.CeasarShiftRight("SAILTHESHIPS"))
 	fmt.Println(crypto.CeasarShiftLeft("VDLOWKHVKLSV"))
 
-	fmt.Println(crypto.CeasarShiftLeft("DWWDFNWKHJDWHVDWVXQGRZQ"))
 }

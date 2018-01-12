@@ -1,4 +1,4 @@
 Crypto
 ===
 
-Lib for class for Coursea Crypto thinggy mah do. Also kinda an expermential RPG... we'll see.
+RPG story tales and cryptolab for Coursea. It might be a bunch of broken crypto. :)

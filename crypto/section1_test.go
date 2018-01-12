@@ -18,7 +18,8 @@ func TestCeasarShiftLeft(t *testing.T) {
 	}
 }
 
-// hmmm, I should learn how to spell check or just how to spell in general...
+// Hehe,  SALE ;)
+
 func TestCeasarShiftRight(t *testing.T) {
 	cases := []struct {
 		in, want string

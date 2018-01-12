@@ -10,19 +10,24 @@ var Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 // Ceasar does a 3 character shift with a rot 25 (capitals)
 // Deprecated: Original credit to some Roman dude a couple millennium ago.
 //
-// ABCDEFGHIJKLMNOPQRSTUVWXYZ
-// vvvvvvvvvvvvvvvvvvvvvvvvvv
-// XYZABCDEFGHIJKLMNOPQRSTUVW
+// RPG: Start....
+// You're marching along when you step upon a flier.
+// You rip it up to read it better.
+//
+// Here's the gibberish:
+// XYZABCDEFG
 // ---
-// Success! You've found buried treasure. Always keep an eye out for stuff like this.
+// Success! You can barely dicpher this part of the message.
 // It could lead to interesting stories ;)
 // And who knows what it might bring
-// DWWDFNWKHJDWHVDWVXQGRZQ
-// You'll make a great person of yourself .
+//
 func CeasarShiftLeft(input string) string {
 	sr := ""
 	for _, r := range strings.ToUpper(input) {
 		ix := strings.IndexRune(Alphabet, r) // Index of char
+
+		// Hmm, Frozen issue: https://github.com/golang/go/issues/448
+		// Argument makes sense for this hack.
 		if ix < 3 {
 			ix = ix + 26
 		}
@@ -32,7 +37,7 @@ func CeasarShiftLeft(input string) string {
 	return sr
 }
 
-//CeasarShiftRight does a 3 character shift to the right with a rot 25 (captials)
+//CeasarShiftRight does a 3 character shift to the right with a rot 26 (captials)
 // Deprecated: Original credit to some Roman dude a couple millennium ago.
 //
 // XYZABCDEFGHIJKLMNOPQRSTUVW
