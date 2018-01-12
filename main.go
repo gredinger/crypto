@@ -8,7 +8,7 @@ import (
 
 // Just making sure we can encode things correctly. SAILTHESHIPS <-> VDLOWKHVKLSV
 func main() {
-	fmt.Println(crypto.CeasarShiftRight("SAILTHESHIPS"))
+	fmt.Println(crypto.CeasarShiftRight("HELLOEVERYONE"))
 	fmt.Println(crypto.CeasarShiftLeft("VDLOWKHVKLSV"))
 
 }
